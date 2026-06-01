@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Prasath | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0c10;
+            overflow-x: hidden;
+        }
+        /* Smooth Scrollbar Dynamic Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0c10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+        /* Hover micro-interactions for structural elements */
+        .glow-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(168, 85, 247, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.15);
+        }
+    </style>
+</head>
+<body class="text-gray-300 antialiased selection:bg-purple-500/30 selection:text-white">
+
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute -top-[40%] left-[20%] w-[800px] h-[800px] rounded-full bg-purple-900/10 blur-[120px]"></div>
+        <div class="absolute top-[60%] -left-[20%] w-[600px] h-[600px] rounded-full bg-indigo-900/10 blur-[100px]"></div>
+    </div>
+
+    <div id="sidebar" class="fixed bottom-0 left-6 z-50 hidden md:flex flex-col items-center gap-6 after:content-[''] after:w-[1px] after:h-24 after:bg-gray-700">
+        <a href="https://www.linkedin.com/in/hari-prasath-b22075326/" target="_blank" class="text-gray-500 hover:text-purple-400 hover:-translate-y-1 transition-all duration-300 text-xl">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:hariprasathv08@gmail.com" class="text-gray-500 hover:text-purple-400 hover:-translate-y-1 transition-all duration-300 text-xl">
+            <i class="far fa-envelope"></i>
+        </a>
+        <a href="tel:+916369113681" class="text-gray-500 hover:text-purple-400 hover:-translate-y-1 transition-all duration-300 text-xl">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <div id="scroll-indicator" class="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-4 text-xs font-medium uppercase tracking-widest text-gray-600">
+        <span class="rotate-90 origin-left translate-x-3 text-[10px]">Scroll Down</span>
+    </div>
+
+    <header id="navbar" class="fixed top-0 left-0 w-full z-40 bg-[#0b0c10]/70 backdrop-blur-md border-b border-gray-900/50 transition-all duration-300">
+        <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-sm font-semibold tracking-wider text-white uppercase hover:text-purple-400 transition-colors duration-300">HARI.PRASATH</a>
+            <div class="flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-white transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300">Home</a>
+                <a href="#about" class="hover:text-white transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300">About</a>
+                <a href="#experience" class="hover:text-white transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300">Skills</a>
+                <a href="#projects" class="hover:text-white transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300">Projects</a>
+                <a href="#contact" class="hover:text-white transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-purple-500 hover:after:w-full after:transition-all after:duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 pt-20">
+
+        <section id="home" class="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center py-8 sm:py-12">
+            <span class="reveal-hero-1 text-purple-400 font-medium tracking-wide mb-3 block">Hello I'm</span>
+            <h1 class="reveal-hero-2 text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">Hari Prasath</h1>
+            <p class="reveal-hero-3 text-lg md:text-xl text-gray-400 font-medium mb-6 sm:mb-10">Cyber Security Analyst (Entry-Level)</p>
+            
+            <div class="reveal-hero-4 flex flex-wrap gap-4 justify-center mb-10 sm:mb-16">
+                <a href="hariSOC.pdf" download="hariSOC.pdf" class="px-6 h-12 flex items-center bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-white/5">Download CV</a>
+                <a href="#contact" class="px-6 h-12 flex items-center bg-zinc-900 border border-zinc-800 text-white font-medium rounded-lg hover:bg-zinc-800 hover:border-zinc-700 transition-all duration-300 transform hover:-translate-y-0.5">Let's Talk</a>
+            </div>
+
+            <div class="reveal-hero-5 relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-zinc-900 shadow-2xl bg-zinc-900/50 flex items-center justify-center transition-transform duration-500 hover:scale-105">
+                <img src="1000066694.png" alt="Hari Prasath" class="w-full h-full object-cover object-center">
+            </div>
+        </section>
+
+        <section id="about" class="py-12 sm:py-24 border-t border-zinc-900/50">
+            <div class="reveal-sec text-center mb-10 sm:mb-16">
+                <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">Get To Know</span>
+                <h2 class="text-3xl font-bold text-white mt-1">About Me</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8 sm:mb-10">
+                <div class="reveal-card bg-zinc-900/30 border border-zinc-900 p-4 sm:p-6 rounded-xl text-center backdrop-blur-sm glow-card">
+                    <i class="fas fa-shield-alt text-purple-400 text-xl mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Level</h3>
+                    <p class="text-xs text-gray-400">Entry-Level</p>
+                </div>
+                <div class="reveal-card bg-zinc-900/30 border border-zinc-900 p-4 sm:p-6 rounded-xl text-center backdrop-blur-sm glow-card">
+                    <i class="fas fa-graduation-cap text-purple-400 text-xl mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Education</h3>
+                    <p class="text-xs text-gray-400">B.Sc. Cyber Security</p>
+                </div>
+                <div class="reveal-card bg-zinc-900/30 border border-zinc-900 p-4 sm:p-6 rounded-xl text-center backdrop-blur-sm glow-card">
+                    <i class="fas fa-map-marker-alt text-purple-400 text-xl mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Location</h3>
+                    <p class="text-xs text-gray-400">Coimbatore, India</p>
+                </div>
+            </div>
+
+            <div class="reveal-text max-w-2xl mx-auto text-center text-gray-400 leading-relaxed space-y-4">
+                <p>
+                    Curious and motivated individual building a career in cybersecurity, with hands-on exposure to networking, 
+                    Linux, security monitoring, and incident response through labs and practical learning.
+                </p>
+                <p>
+                    Actively developing skills in analyzing security events, understanding threats, and protecting systems. 
+                    Seeking an entry-level Cyber Security Analyst role to learn from real-world environments, gain industry 
+                    experience, and contribute to security operations.
+                </p>
+                <p class="text-sm text-purple-400/90 pt-2 font-medium">
+                    Core Strengths: Teamwork | Problem Solving | Adaptability | Time Management
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="py-12 sm:py-24 border-t border-zinc-900/50">
+            <div class="reveal-sec text-center mb-10 sm:mb-16">
+                <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">What Skills I Have</span>
+                <h2 class="text-3xl font-bold text-white mt-1">My Experience</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+                <div class="reveal-left bg-zinc-900/20 border border-zinc-900/80 rounded-2xl p-5 sm:p-8 backdrop-blur-sm glow-card">
+                    <h3 class="text-lg font-semibold text-white text-center mb-8">Web & Scripting Foundations</h3>
+                    <div class="grid grid-cols-2 gap-y-6 gap-x-4">
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-check-circle text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">HTML</h4>
+                                <span class="text-xs text-gray-500">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-check-circle text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">CSS</h4>
+                                <span class="text-xs text-gray-500">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-check-circle text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Linux CLI</h4>
+                                <span class="text-xs text-gray-500">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-check-circle text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Bash Scripting</h4>
+                                <span class="text-xs text-gray-500">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-right bg-zinc-900/20 border border-zinc-900/80 rounded-2xl p-5 sm:p-8 backdrop-blur-sm glow-card">
+                    <h3 class="text-lg font-semibold text-white text-center mb-8">Technology & Network Security</h3>
+                    <div class="grid grid-cols-2 gap-y-6 gap-x-4">
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-shield-virus text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Wireshark</h4>
+                                <span class="text-xs text-gray-500">Packet Analysis</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-shield-virus text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Nmap</h4>
+                                <span class="text-xs text-gray-500">Port Scanning</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-shield-virus text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">TCP/IP Core</h4>
+                                <span class="text-xs text-gray-500">OSI Layer Model</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 group">
+                            <i class="fas fa-shield-virus text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">UFW Firewall</h4>
+                                <span class="text-xs text-gray-500">Configuration</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 col-span-2 group">
+                            <i class="fas fa-shield-virus text-purple-500 mt-1 text-sm group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Security Monitoring</h4>
+                                <span class="text-xs text-gray-500">Log Analysis & Audit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-12 sm:py-24 border-t border-zinc-900/50">
+            <div class="reveal-sec text-center mb-10 sm:mb-16">
+                <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">What I Know & Achieved</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Learning & Achievements</h2>
+            </div>
+
+            <div class="reveal-project bg-zinc-900/20 border border-zinc-900 rounded-2xl p-4 sm:p-6 md:p-8 mb-8 sm:mb-12 backdrop-blur-sm glow-card">
+                <div class="flex flex-wrap justify-between items-start gap-2 mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white tracking-tight">SECURE-FW - Linux Firewall Automation Tool</h3>
+                        <span class="text-xs text-purple-400 font-medium">Bash Scripting Module</span>
+                    </div>
+                    <span class="text-xs text-gray-500 font-medium px-3 py-1 bg-zinc-900 rounded-full border border-zinc-800">Jan 2026 - Present</span>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-400 list-disc list-inside marker:text-purple-500">
+                    <li>Developed a Linux firewall automation tool using Bash scripting and UFW for defensive security learning</li>
+                    <li>Implemented firewall management features to enable and disable firewall rules</li>
+                    <li>Configured allow and deny rules for network ports to control inbound traffic</li>
+                    <li>Restricted access to malicious/unwanted websites by programmatically modifying the /etc/hosts file</li>
+                    <li>Implemented SSH brute-force detection by monitoring authentication logs and auto-blocking repetitive malicious IPs</li>
+                </ul>
+            </div>
+
+            <h3 class="reveal-text text-sm font-bold text-gray-500 uppercase tracking-widest text-center mb-6">Verified Certificates</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div class="reveal-card-loop bg-zinc-900/40 border border-zinc-900/60 p-4 sm:p-5 rounded-xl flex flex-col justify-between glow-card">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Coursera</span>
+                        <h4 class="text-sm font-semibold text-white mt-1">Google Cybersecurity Professional Certificate</h4>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 block">Sep 2025</span>
+                </div>
+                <div class="reveal-card-loop bg-zinc-900/40 border border-zinc-900/60 p-4 sm:p-5 rounded-xl flex flex-col justify-between glow-card">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Infosys</span>
+                        <h4 class="text-sm font-semibold text-white mt-1">Computer Network & Internet Security</h4>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 block">May 2025</span>
+                </div>
+                <div class="reveal-card-loop bg-zinc-900/40 border border-zinc-900/60 p-4 sm:p-5 rounded-xl flex flex-col justify-between glow-card">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-purple-400 tracking-wider">Meta</span>
+                        <h4 class="text-sm font-semibold text-white mt-1">HTML and CSS in Depth</h4>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 block">Mar 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 sm:py-24 border-t border-zinc-900/50 mb-8 sm:mb-12">
+            <div class="reveal-sec text-center mb-10 sm:mb-16">
+                <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">Get In Touch</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Contact Me</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-12 items-start">
+                <div class="md:col-span-2 space-y-3 sm:space-y-4 reveal-left">
+                    <div class="bg-zinc-900/30 border border-zinc-900 p-4 sm:p-5 rounded-xl text-center flex flex-col items-center glow-card">
+                        <i class="far fa-envelope text-purple-400 text-lg mb-2"></i>
+                        <h4 class="text-sm font-semibold text-white">Email</h4>
+                        <span class="text-xs text-gray-500 mb-3">hariprasathv08@gmail.com</span>
+                        <a href="mailto:hariprasathv08@gmail.com" class="text-xs font-medium text-purple-400 hover:underline">Send a message</a>
+                    </div>
+                    <div class="bg-zinc-900/30 border border-zinc-900 p-4 sm:p-5 rounded-xl text-center flex flex-col items-center glow-card">
+                        <i class="fab fa-linkedin-in text-purple-400 text-lg mb-2"></i>
+                        <h4 class="text-sm font-semibold text-white">LinkedIn</h4>
+                        <span class="text-xs text-gray-500 mb-3">Hari Prasath</span>
+                        <a href="https://www.linkedin.com/in/hari-prasath-b22075326/" target="_blank" class="text-xs font-medium text-purple-400 hover:underline">Connect</a>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="md:col-span-3 space-y-3 sm:space-y-4 reveal-right">
+                    <input type="text" name="name" placeholder="Your Full Name" required class="w-full h-10 sm:h-12 bg-zinc-900/50 border border-zinc-800/80 rounded-lg px-3 sm:px-4 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300">
+                    <input type="email" name="email" placeholder="Your Email Address" required class="w-full h-10 sm:h-12 bg-zinc-900/50 border border-zinc-800/80 rounded-lg px-3 sm:px-4 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300">
+                    <textarea name="message" rows="6" placeholder="Your Message Here..." required class="w-full bg-zinc-900/50 border border-zinc-800/80 rounded-lg p-3 sm:p-4 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300 resize-none"></textarea>
+                    <button type="submit" class="w-full sm:w-auto px-4 sm:px-6 h-10 sm:h-12 bg-purple-600 text-white font-medium rounded-lg text-sm hover:bg-purple-700 transition-all duration-300 shadow-lg shadow-purple-600/10 transform hover:-translate-y-0.5">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-zinc-950 py-8 bg-[#07080a] text-center text-xs text-gray-600">
+        <p>&copy; 2026 Hari Prasath. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '60px',
+            duration: 1000,
+            delay: 200,
+            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+            reset: false
+        });
+
+        // Fixed wireframe layout slides
+        sr.reveal('#navbar', { origin: 'top', distance: '40px', delay: 100 });
+        sr.reveal('#sidebar', { origin: 'left', distance: '40px', delay: 400 });
+        sr.reveal('#scroll-indicator', { origin: 'right', distance: '40px', delay: 400 });
+
+        // Hero components staging delays
+        sr.reveal('.reveal-hero-1', { delay: 200 });
+        sr.reveal('.reveal-hero-2', { delay: 350 });
+        sr.reveal('.reveal-hero-3', { delay: 500 });
+        sr.reveal('.reveal-hero-4', { delay: 650 });
+        sr.reveal('.reveal-hero-5', { delay: 800, scale: 0.9 });
+
+        // Section header and grid structures transitions
+        sr.reveal('.reveal-sec', { distance: '40px' });
+        sr.reveal('.reveal-text', { delay: 300 });
+        sr.reveal('.reveal-left', { origin: 'left', delay: 300 });
+        sr.reveal('.reveal-right', { origin: 'right', delay: 300 });
+        sr.reveal('.reveal-project', { delay: 250 });
+        sr.reveal('.reveal-card', { interval: 150 });
+        sr.reveal('.reveal-card-loop', { interval: 100, distance: '30px' });
+    </script>
+</body>
+</html>
